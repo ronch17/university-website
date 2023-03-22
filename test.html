@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Styling links</title>
+    <style type="text/css">
+      /* Write your CSS solution here (do not edit the surrounding HTML) */
+      a {
+        cursor: help;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+      a::after {
+        content: "<";
+      }
+      a::before {
+        content: ">";
+      }
+
+      button:hover {
+        animation-name: wiggle;
+        animation-duration: 1s;
+      }
+
+      @keyframes wiggle {
+        33% {
+          transform: rotate(25deg);
+        }
+        66% {
+          transform: rotate(-25deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <a href="http://www.testdome.com">Check documentation</a>
+    <button>hey</button>
+  </body>
+</html>
